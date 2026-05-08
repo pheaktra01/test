@@ -40,3 +40,16 @@ npm run dev
 ```sh
 npm run build
 ```
+
+## Portfolio
+
+This repository now contains a simple portfolio page implemented in `src/components/Portfolio.vue` and `src/components/ProjectCard.vue` and is rendered by `src/App.vue`.
+
+To edit the projects shown, update the `projects` array in `src/components/Portfolio.vue`.
+
+## Deployment
+
+- GitHub Pages: build with `npm run build` and publish the `dist` folder using the `gh-pages` branch or GitHub Actions.
+- Vercel / Netlify: connect the repo and set the build command to `npm run build` and the output directory to `dist`.
+
+If you want, I can add a CI workflow or a GitHub Pages deploy script.

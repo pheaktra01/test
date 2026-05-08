@@ -1,11 +1,21 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Portfolio from './components/Portfolio.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div id="app">
+    <header style="padding:18px; text-align:center; background:linear-gradient(90deg,#f3f4f6,#fff)">
+      <h2>My Vue Portfolio</h2>
+      <p style="margin:6px 0; color:#6b7280">A collection of projects from this course.</p>
+    </header>
+
+    <main>
+      <Portfolio />
+    </main>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+#app { font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#111827; }
+main { padding-bottom: 40px; }
+</style>
