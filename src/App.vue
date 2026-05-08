@@ -5,12 +5,12 @@ import Portfolio from './components/Portfolio.vue'
 <template>
   <div id="app">
     <header style="padding:18px; text-align:center; background:linear-gradient(90deg,#f3f4f6,#fff)">
-      <h2>My Vue Portfolio</h2>
-      <p style="margin:6px 0; color:#6b7280">A collection of projects from this course.</p>
+      <h2>Deploy test</h2>
+      <img src="./assets/doge.png" alt="Doge">
     </header>
 
     <main>
-      <Portfolio />
+      <!-- <Portfolio /> -->
     </main>
   </div>
 </template>
