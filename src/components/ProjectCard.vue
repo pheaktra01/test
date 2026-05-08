@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
-
-const props = defineProps<{
+const { title, description, tech, link } = defineProps<{
   title: string
   description: string
   tech?: string
@@ -11,13 +9,13 @@ const props = defineProps<{
 
 <template>
   <article class="card">
-    <header class="card-header">
-      <h3>{{ props.title }}</h3>
+      <header class="card-header">
+      <h3>{{ title }}</h3>
     </header>
-    <p class="card-desc">{{ props.description }}</p>
-    <p class="card-tech" v-if="props.tech">Tech: {{ props.tech }}</p>
+    <p class="card-desc">{{ description }}</p>
+    <p class="card-tech" v-if="tech">Tech: {{ tech }}</p>
     <div class="card-actions">
-      <a v-if="props.link" :href="props.link" target="_blank" rel="noopener" class="btn">View</a>
+      <a v-if="link" :href="link" target="_blank" rel="noopener" class="btn">View</a>
     </div>
   </article>
 </template>
